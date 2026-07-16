@@ -1,0 +1,17 @@
+# Global gitignore applied to every repo (via core.excludesfile).
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor cruft
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Env / secrets you never want in any repo
+.env
+.env.*

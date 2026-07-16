@@ -1,0 +1,27 @@
+[user]
+    name = Evan Wolfe
+    email = evan.m.wolfe@gmail.com
+
+[init]
+    defaultBranch = main
+
+[core]
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
+
+[pull]
+    rebase = false
+
+[color]
+    ui = auto
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    lg = log --oneline --graph --decorate --all
+
+# Machine-specific overrides (work email, signing keys, etc.) stay OUT of the
+# repo. Keep them in ~/.gitconfig.local and they'll be pulled in here:
+[include]
+    path = ~/.gitconfig.local

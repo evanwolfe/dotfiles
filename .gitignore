@@ -1,0 +1,37 @@
+# ─── Never commit secrets ──────────────────────────────────────────────
+# SSH keys
+id_rsa
+id_ed25519
+*.pem
+*.key
+*.ppk
+
+# Credentials / tokens / env
+.env
+.env.*
+*_token
+*.secret
+credentials
+.netrc
+
+# Shell / command history
+.bash_history
+.zsh_history
+.python_history
+
+# ─── OS cruft ──────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Editor cruft ──────────────────────────────────────────────────────
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# ─── Local-only overrides (keep machine-specific tweaks out of the repo) ─
+*.local
+zsh/.zshrc.local
+git/.gitconfig.local
